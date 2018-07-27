@@ -1,0 +1,84 @@
+<!-- <h1>{{title}}</h1>
+<nav>
+  <a routerLink="/index">index</a>
+  <a routerLink="/dashboard">Dashboard</a>
+  <a routerLink="/heroes">Heroes</a>
+</nav> -->
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" (click)="pageChange('index')" href="javascript:;">{{this.lan.HEADER.logo}}</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  
+    
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link" [ngClass]="{ 'active': this.page == 'index' }" (click)="pageChange('index')" href="javascript:;">{{this.lan.HEADER.search}}<span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" [ngClass]="{ 'active': this.page == 'upload' }" (click)="pageChange('upload')" href="javascript:;">{{this.lan.HEADER.upload}}<span class="sr-only">(current)</span></a>
+          </li>
+            
+        </ul>
+        
+        <ul class="navbar-nav nav justify-content-end">
+          <li class="nav-item">
+            <a class="nav-link" [ngClass]="{ 'active': this.page == 'login' }" (click)="pageChange('login')" href="javascript:;">{{this.lan.HEADER.login}}</a>
+          </li>
+          <!-- <li class="nav-item">
+              <a class="nav-link" routerLink="/language/jp">日本語</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" routerLink="/language/en">English</a>
+            </li> -->
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              {{this.lan.HEADER.lan}}
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" [ngClass]="{ 'active': this.lansetting == 'jp' }" routerLink="/language/jp">日本語</a>
+              <a class="dropdown-item" [ngClass]="{ 'active': this.lansetting == 'en' }" routerLink="/language/en">English</a>
+              <a class="dropdown-item" [ngClass]="{ 'active': this.lansetting == 'zh' }" routerLink="/language/zh">中文</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+    <!-->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">ファイル名一覧<span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/dashboard">English ver.</a>
+        </li>
+      </ul>
+      <form class="form-inline my-2 my-lg-0">
+        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+      </form>
+      
+      <ul class="navbar-nav nav justify-content-end">
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/dashboard">ログイン</a>
+        </li>
+      </ul>
+    </div>
+    <-->
+  </nav>
+
+<router-outlet></router-outlet>
+<app-messages></app-messages>
+
+<!-- <footer class="footer fixed-bottom" style="background-color:lightgrey">
+    <div class="container">
+        <p style="text-align:center;">Copyright © 2005-2018 Proface Systems Co.,Ltd. All rights reserved.</p>
+    </div>
+</footer> -->
+<!-- <nav class="navbar fixed-bottom navbar-light bg-light">
+    <p style="text-align:center;">Copyright © 2005-2018 Proface Systems Co.,Ltd. All rights reserved.</p>
+  </nav> -->

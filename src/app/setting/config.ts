@@ -1,0 +1,105 @@
+import { Injectable } from '@angular/core';
+
+@Injectable({ providedIn: 'root' })
+export class Config {
+    public SERVER_URL : string = "http://127.0.0.1:8086";
+
+    public LANGUAGE = {
+        JA:{
+            INDEX:{
+                class1:"通話件数/時間",
+                class2:"電話取次件数",
+                class3:"時間別",
+                class4:"日別",
+                class5:"月別",
+                class6:"個人別（電話機）",
+                class7:"部署別",
+                class8:"発信のみ",
+                class9:"受信のみ",
+                class10:"すべて",
+                class11:"件数多い順",
+                class12:"通話時間多い順",
+                class13:"通話履歴ファイルを選択してください。",
+                class14:"アカウント",
+                class15:"パスワード"
+            },
+            HEADER:{
+                logo:"通話履歴分析ツール",
+                search:"検索",
+                upload:"アップロード",
+                login:"ログイン",
+                lan:"言語"
+            },
+            TYPE:{
+                category1:"集計期間:",
+                category2:"集計単位:",
+                category3:"通話区分:",
+                category4:"並び順:"
+            }
+        },
+        EN:{
+            INDEX:{
+                class1:"dennwankensuu/jikan",
+                class2:"dennwatoritudikensuu",
+                class3:"Hours",
+                class4:"Days",
+                class5:"Months",
+                class6:"Individual(PhoneID)",
+                class7:"Group",
+                class8:"Senders",
+                class9:"Receivers",
+                class10:"All",
+                class11:"Events",
+                class12:"Duration",
+                class13:"Please Select A File",
+                class14:"Account",
+                class15:"Password"
+            },
+            HEADER:{
+                logo:"TelAnalysis",
+                search:"Search",
+                upload:"Upload",
+                login:"Login",
+                lan:"Language"
+            },
+            TYPE:{
+                category1:"Period:",
+                category2:"Units:",
+                category3:"Status:",
+                category4:"Order:"
+            }
+        },
+        ZH:{
+            INDEX:{
+                class1:"dennwankensuu/jikan",
+                class2:"dennwatoritudikensuu",
+                class3:"小时",
+                class4:"日",
+                class5:"月",
+                class6:"个人（电话）",
+                class7:"单位",
+                class8:"拨打者",
+                class9:"接听方",
+                class10:"全部",
+                class11:"件数",
+                class12:"时长",
+                class13:"请选择文件",
+                class14:"账号",
+                class15:"密码"
+            },
+            HEADER:{
+                logo:"TelAnalysis",
+                search:"搜索",
+                upload:"上传",
+                login:"登陆",
+                lan:"语言"
+            },
+            TYPE:{
+                category1:"时间:",
+                category2:"接听单位:",
+                category3:"信号接听:",
+                category4:"顺序:"
+            }
+        }
+    };
+}

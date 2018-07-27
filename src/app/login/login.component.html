@@ -1,0 +1,57 @@
+
+
+<!-- <div class="cardss">
+    <h5 class="card-header"></h5>
+    <div class="card-body">
+      <form>
+          <div class="form-group row">
+            <label for="inputEmail3" class="col-sm-2 col-form-label" style="background-color:white;">{{this.lan.INDEX.class14}}</label>
+            <div class="col-sm-10">
+              <input type="text" class="form-control" id="inputEmail3" placeholder={{this.lan.INDEX.class14}} [(ngModel)]="this.UserName" name="username">
+            </div>
+          </div>
+          <div class="form-group row">
+            <label for="inputPassword3" class="col-sm-2 col-form-label" style="background-color:white;">{{this.lan.INDEX.class15}}</label>
+            <div class="col-sm-10">
+              <input type="password" class="form-control" id="inputPassword3" placeholder={{this.lan.INDEX.class15}} [(ngModel)]="this.Password" name="password">
+            </div>
+          </div>
+          
+          <div style="display:table;margin:0 auto;">
+            <button type="button" class="btn btn-primary btn-lg" (click)="login()">{{this.lan.HEADER.login}}</button>
+          </div>
+              
+        </form>
+  </div>
+</div> -->
+  
+
+
+  <div class="container">
+      <div class="row row-centered">
+          <div class="well col-md-6 col-centered">
+              <div style="margin-top:150px;margin-bottom:30px;text-align:center;">
+                <img src="./assets/logo.png" />
+              </div>
+              
+              <form>
+                  <div class="input-group input-group-md" style="margin-bottom:15px;">
+                      <span class="input-group-addon" id="sizing-addon1"><i class="glyphicon glyphicon-user" aria-hidden="true"></i></span>
+                      <input type="text" class="form-control" id="inputEmail3" placeholder={{this.lan.INDEX.class14}} [(ngModel)]="this.UserName" name="username">
+                  </div>
+                  <div class="input-group input-group-md">
+                      <span class="input-group-addon" id="sizing-addon1"><i class="glyphicon glyphicon-lock"></i></span>
+                      <input type="password" class="form-control" id="inputPassword3" placeholder={{this.lan.INDEX.class15}} [(ngModel)]="this.Password" name="password">
+                  </div>
+                  <br/>
+                  <!-- <button type="submit" class="btn btn-success btn-block">登录</button> -->
+                  <button type="button" class="btn btn-primary btn-lg btn-block" (click)="login()">{{this.lan.HEADER.login}}</button>
+              </form>
+              
+          </div>
+      </div>
+  </div>
+  <!-- The video -->
+<video autoplay id="myVideo" loop>
+  <source src="./assets/server.mp4" type="video/mp4">
+</video>

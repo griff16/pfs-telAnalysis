@@ -1,0 +1,30 @@
+<div class="card">
+    <div class="card-header">
+      
+    </div>
+    <div class="card-body">
+      <blockquote class="blockquote mb-0">
+        <footer class="blockquote-footer">{{this.lan.INDEX.class13}}</footer>
+
+        <div class="input-group mb-3">
+            <div class="input-group-prepend">
+                <span class="input-group-text" id="inputGroupFileAddon01">CSV File</span>
+              </div>
+              <div class="custom-file">
+                <input type="file" class="custom-file-input" id="file" (change)="uploadFile($event)" aria-describedby="inputGroupFileAddon01">
+                <label class="custom-file-label" for="inputGroupFile01">{{this.fileName}}</label>
+                
+                <!-- <input type="file"  id="file" (change)="uploadFile($event)" aria-describedby="inputGroupFileAddon01"> -->
+              </div>
+        </div>
+      </blockquote>
+      
+      <div style="display:table;margin:0 auto;">
+          <h2>{{msg}}</h2>
+      </div>
+      <div style="display:table;margin:0 auto;">
+        
+        <button type="button" class="btn btn-primary btn-lg" (click)="upload()" [disabled]="!this.file" >{{this.lan.HEADER.upload}}</button>
+      </div>
+    </div>
+  </div>

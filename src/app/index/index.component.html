@@ -1,0 +1,88 @@
+<!-->This is the body of the inital page<-->
+
+<table class="table">
+  <tbody>
+    <!-- <tr>
+      <th scope="row">集計分類：</th>
+      <td>
+          <div class="btn-group btn-group-toggle" data-toggle="buttons">
+            <label class="btn btn-info active" (click)="OnChange('class',1)">
+              <input type="radio" name="options" id="option1" autocomplete="off">{{this.lan.INDEX.class1}}
+            </label>
+            <label class="btn btn-info" (click)="OnChange('class',2)">
+              <input type="radio" name="options" id="option2" autocomplete="off"> {{this.lan.INDEX.class2}}
+            </label>
+          </div>
+      </td>
+    </tr>  -->
+
+    <tr>
+      <th scope="row">{{this.lan.TYPE.category2}}</th>
+      <td>
+          <div class="btn-group btn-group-toggle" data-toggle="buttons">
+            <label class="btn btn-info active" (click)="OnChange('unit',1)">
+              <input type="radio" name="options" id="option1" autocomplete="off"> {{this.lan.INDEX.class6}}
+            </label>
+            <label class="btn btn-info" (click)="OnChange('unit',2)">
+              <input type="radio" name="options" id="option2" autocomplete="off"> {{this.lan.INDEX.class7}}
+            </label>
+          </div>
+      </td>
+    </tr>
+    
+    <tr>
+      <th scope="row">{{this.lan.TYPE.category1}}</th>
+      <td>
+          <div class="btn-group btn-group-toggle" data-toggle="buttons">
+            <label class="btn btn-info active" (click)="OnChange('time',1)">
+              <input type="radio" name="options" id="option1" autocomplete="off"> {{this.lan.INDEX.class3}}
+            </label>
+            <label class="btn btn-info" (click)="OnChange('time',2)">
+              <input type="radio" name="options" id="option2" autocomplete="off"> {{this.lan.INDEX.class4}}
+            </label>
+            <label class="btn btn-info" (click)="OnChange('time',3)">
+              <input type="radio" name="options" id="option2" autocomplete="off"> {{this.lan.INDEX.class5}}
+            </label>
+          </div>
+      </td>
+    </tr>
+    
+    <tr>
+        <th scope="row">{{this.lan.TYPE.category3}}</th>
+        <td>
+            <div class="btn-group btn-group-toggle" data-toggle="buttons">
+              <label class="btn btn-info active" (click)="OnChange('type',1)">
+                <input type="radio" name="options" id="option1" autocomplete="off"> {{this.lan.INDEX.class8}}
+              </label>
+              <label class="btn btn-info" (click)="OnChange('type',2)">
+                <input type="radio" name="options" id="option2" autocomplete="off"> {{this.lan.INDEX.class9}}
+              </label>
+              <label class="btn btn-info" (click)="OnChange('type',3)">
+                <input type="radio" name="options" id="option2" autocomplete="off"> {{this.lan.INDEX.class10}}
+              </label>
+            </div>
+        </td>
+      </tr>
+
+      <tr>
+          <th scope="row">{{this.lan.TYPE.category4}}</th>
+          <td>
+              <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                <label class="btn btn-info active" (click)="OnChange('order',1)">
+                  <input type="radio" name="options" id="option1" autocomplete="off"> {{this.lan.INDEX.class11}}
+                </label>
+                <label class="btn btn-info" (click)="OnChange('order',2)">
+                  <input type="radio" name="options" id="option2" autocomplete="off"> {{this.lan.INDEX.class12}}
+                </label>
+              </div>
+          </td>
+        </tr>
+        
+      <tr>
+          <th scope="row"></th>
+          <td>
+              <button type="button" class="btn btn-primary btn-lg" (click)="search()">{{this.lan.HEADER.search}}</button>
+          </td>
+        </tr>
+  </tbody>
+</table>
